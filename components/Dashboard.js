@@ -31,7 +31,9 @@ const Dashboard = () => {
        let month = new Date().getMonth()
        setHour(hours)
        if(minutes < 10){
-        setMinutes("0" + minutes)
+         setMinutes("0" + minutes)
+       }else{
+        setMinutes(minutes)
        }
        getDay()
        getMonth()
@@ -140,7 +142,6 @@ const Dashboard = () => {
           </View>
          <DashboardSection/>
         </View>
-       <ButtonNavigation/>
    </View>
   )
 }

@@ -33,7 +33,7 @@ const ChatPage = () => {
             <Text>Dr Priscilla Asiedu</Text>
          </View>
        </View>
-       <ScrollView className="p-2">
+       <ScrollView className="p-1">
          <Sendermessage/>
          <Receivedmessage/>
           <Sendermessage/>

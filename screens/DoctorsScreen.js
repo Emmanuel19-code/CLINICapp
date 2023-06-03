@@ -30,7 +30,6 @@ const DoctorsScreen = () => {
                 <DoctorProfile/>
                 <DoctorProfile/>
              </ScrollView>
-            <ButtonNavigation/>
     </SafeAreaView>
   )
 }

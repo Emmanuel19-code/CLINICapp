@@ -7,7 +7,7 @@ const useMove = () =>{
       navigation.navigate("Sign In")
      }
      const moveToRegister = () =>{
-      navigation.navigate("Sign Up")
+      navigation.navigate("Register")
      }
      const moveToLogin = () =>{
        navigation.navigate("Login")
@@ -19,7 +19,7 @@ const useMove = () =>{
       navigation.navigate("Forgot Password")
      }
      const moveToNewPassword = () =>{
-      navigation.navigate("Confirm Password")
+      navigation.navigate("ResetPassword")
      }
      const moveToDashboard = () =>{
       navigation.replace("Dashboard")

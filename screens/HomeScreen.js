@@ -8,7 +8,7 @@ import useMove from '../hooks/useMove'
 
 const HomeScreen = () => {
   const navigation = useNavigation();
-  const {moveToDashboard,BookAppointment,Authentication} = useMove()
+  const {moveToDashboard,BookAppointment,moveToLogin} = useMove()
      useLayoutEffect(() => {
        navigation.setOptions({
        headerShown:false
@@ -30,7 +30,7 @@ const HomeScreen = () => {
          </View>
          <View>
             <TouchableOpacity
-            onPress={Authentication}
+            onPress={moveToLogin}
             >
               <Text className="bg-blue-600 text-white rounded-md p-3 font-bold mb-10">
                 GET STARTED

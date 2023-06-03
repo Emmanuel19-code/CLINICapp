@@ -24,7 +24,6 @@ const Notification = () => {
          <BlogNotify/>
          <ShopNotify/>
       </ScrollView>
-      <ButtonNavigation/>
     </SafeAreaView>
   )
 }

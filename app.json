@@ -24,6 +24,10 @@
       },
       "package": "com.emmanuelbos.starclinic2"
     },
+     "expo-image-picker":
+        {
+          "photosPermission": "The app accesses your photos"
+        },
     "web": {
       "favicon": "./assets/favicon.png"
     },

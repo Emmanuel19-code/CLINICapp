@@ -109,14 +109,16 @@ const AuthenticationScreen = () => {
               </Text>
          </TouchableOpacity>
         </View>
-         <Text className="">
+        <View className="flex-row items-center">
+           <Text className="">
             Don’t have an account?
-            <Text className="text-blue-600 ml-4" 
+        </Text>
+        <Text className="text-blue-600 ml-1" 
             onPress={moveToRegister}
             >
               Register
             </Text>
-        </Text>
+        </View>
       </SafeAreaView>
   )
 }

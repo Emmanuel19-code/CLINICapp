@@ -29,7 +29,6 @@ const ChatsScreen = () => {
            messageCount={10}
           />
       </ScrollView>
-      <ButtonNavigation/>
     </SafeAreaView>
   )
 }

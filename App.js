@@ -2,17 +2,16 @@ import 'react-native-gesture-handler';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from "./screens/HomeScreen"
-import DoctorsScreen from "./screens/DoctorsScreen"
 import DoctorDetailsScreen from './screens/DoctorDetailsScreen';
-import ChatsScreen from './screens/ChatsScreen';
 import BookAppointment from './screens/BookAppointment';
 import AuthenticationScreen from './screens/AuthenticationScreen';
 import { SafeAreaProvider, } from "react-native-safe-area-context"
-import DrawerRoutes from './components/DrawerRoutes';
-import ProfileScreen from './screens/ProfileScreen';
-import Notification from './screens/Notification';
 import ChatPage from './screens/ChatPage';
-
+import TabBottom from './components/TabBottom';
+import Register from './components/Register';
+import ForgotPassword from './screens/ForgotPassword';
+import ResetPassword from './screens/ResetPassword';
+import Verification from './screens/Verification';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,15 +22,15 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator>
               <Stack.Screen  name="Home" component={HomeScreen}/> 
-              <Stack.Screen  name='Authentication' component={AuthenticationScreen}/>
-              <Stack.Screen  name="Dashboard" component={DrawerRoutes}/>
-              <Stack.Screen  name='Doctors' component={DoctorsScreen}/>
+              <Stack.Screen  name="Dashboard" component={TabBottom}/>
               <Stack.Screen  name='DoctorProfile' component={DoctorDetailsScreen}/>   
-              <Stack.Screen  name='Chat' component={ChatsScreen}/>
               <Stack.Screen  name='Appointment' component={BookAppointment}/>
-              <Stack.Screen  name='Profile' component={ProfileScreen}/>
-              <Stack.Screen  name='Notification' component={Notification}/>
               <Stack.Screen  name='ChatPage' component={ChatPage}/>
+              <Stack.Screen name='Register' component={Register}/>
+              <Stack.Screen name='Login' component={AuthenticationScreen}/>
+              <Stack.Screen name='Forgot Password' component={ForgotPassword}/>
+              <Stack.Screen name='ResetPassword' component={ResetPassword}/>
+              <Stack.Screen name='Verification' component={Verification}/>
          </Stack.Navigator>
     </NavigationContainer>
    </SafeAreaProvider>

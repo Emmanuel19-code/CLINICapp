@@ -38,7 +38,7 @@ const DrawerRoutes = () => {
               <MaterialIcons name="dashboard" size={20} color="black" />
              )
             }}
-          name='MainDashboard' component={DashboardScreen}/>
+          name='Dashboard' component={DashboardScreen}/>
           <Drawer.Screen 
           options={{ 
              drawerIcon:()=>(

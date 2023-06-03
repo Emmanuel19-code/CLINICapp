@@ -16,7 +16,7 @@ const ProfileScreen = () => {
   return (
     <SafeAreaView className="h-full">
       <View className="bg-blue-600 p-2 w-full h-20  flex-row items-center">
-        <View className="bg-gray-300 w-12 h-12 rounded-full  justify-center items-center">
+        <View className="bg-gray-300 w-10 h-10 rounded-full  justify-center items-center">
             <Image
         source={require("../assets/Mask.jpg")}
         className="w-10 h-10"
@@ -28,6 +28,10 @@ const ProfileScreen = () => {
          <View className="p-2 border-b m-2 border-gray-200">
            <Text className="text-lg font-bold">Name</Text>
            <Text className="text-gray-400">Maxwell Emmanuel</Text>
+         </View>
+           <View className="p-2 border-b m-2 border-gray-200">
+           <Text className="text-lg font-bold">Gender</Text>
+           <Text className="text-gray-400">Male</Text>
          </View>
           <View className="p-2 border-b m-2 border-gray-200">
            <Text className="text-lg font-bold">Email</Text>
@@ -50,7 +54,6 @@ const ProfileScreen = () => {
            <Text className="text-gray-400">Ghana</Text>
          </View>
       </View>
-      <ButtonNavigation/>
     </SafeAreaView>
   )
 }
